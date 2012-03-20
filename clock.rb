@@ -16,4 +16,4 @@ handler { |job|
   Resque.enqueue(job, 'mango')
 }
 
-every 1.seconds, Eat
+every 15.seconds, Eat
