@@ -1,19 +1,26 @@
-#Quick demo of sinatra app plus resque plus foreman
+Sinatra + MongoDB + Resque + Clockwork Bootstrap
+================================================
+This project is a bootstrap to begin a project with those technologies.
+
+- **Sinatra** framework
+- **MongoDB** database
+- **Resque** background jobs
+- **Clockwork** cron
+
+#Run databases
+##MongoDB (main database)
+    $ mkdir data
+    $ mongod --dbpath ./data
+##Redis (for Resque)
+	$ redis-server
+
+
+#Run services
 
     $ bundle install
     $ foreman start
 
-checkout http://localhost:9393/ for the app that queues items. Thanks to [redistogo](http://blog.redistogo.com/2010/10/04/resque-with-sinatra/) for most of the code
 
-checkout http://localhost:5678 for the resque monitoring app
+#Thanks
 
-
-# with rack
-
-or start resque
-
-   $ rake resque:work
-
-and in another start both web apps (one server)
-
-   $ rackup
+Thanks to [kylefritz](https://github.com/kylefritz/) for make my life little bit easier with his [Resque+Sinatra+Foreman example](https://github.com/kylefritz/resque-sinatra-foreman-example)

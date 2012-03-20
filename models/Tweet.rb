@@ -7,5 +7,5 @@ class Tweet
   field :lat
   field :lon
   field :time
-  field :num_retweets
+  field :retweets
 end
