@@ -1,6 +1,6 @@
 Sinatra + MongoDB + Resque + Clockwork Bootstrap
 ================================================
-This project is a bootstrap to begin a project with those technologies.
+This project is a bootstrap to begin project with these technologies. 
 
 - **Sinatra** framework
 - **MongoDB** database
